@@ -1,0 +1,20 @@
+.main {
+  .header {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24.38px;
+    color: #838383;
+  }
+  .cards {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 28.35px;
+    margin-bottom: 20px;
+
+    .cards-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+}

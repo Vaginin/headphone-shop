@@ -1,0 +1,35 @@
+<div mat-dialog-title align="end">
+  <button class="close" (click)="close()">
+    <img src="assets/icons/close.svg" alt="delete button" />
+  </button>
+</div>
+<mat-dialog-content>
+  <div class="card-side">
+    <div class="card-detail">
+      <div class="left-side">
+        <div class="card-counter">
+          <div class="card-img">
+            <img src="{{ product.img }}" alt="card image" />
+          </div>
+        </div>
+        <div class="wrapper">
+          <span class="title">{{ product.title }}</span>
+          <div class="price-wrapper">
+            <p class="price">{{ product.price }} ₽</p>
+            <p *ngIf="product.discount" class="discount">
+              {{ product.discount }} ₽
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <div class="button-wrapper">
+    <button class="card-button">В избранное</button>
+    <button (click)="addToBasket(product); close()" class="card-button">
+      Купить
+    </button>
+  </div>
+</mat-dialog-actions>

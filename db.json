@@ -1,0 +1,82 @@
+{
+  "wiredHeadphones": [
+    {
+      "id": "1",
+      "img": "assets/img/phone_card_1.png",
+      "title": "MEG Trident X 10th",
+      "price": 2927,
+      "discount": 3570,
+      "rate": 4.7
+    },
+    {
+      "id": "2",
+      "img": "assets/img/phone_card_2.png",
+      "title": "Apple EarPods",
+      "price": 2327,
+      "rate": 4.5
+    },
+    {
+      "id": "3",
+      "img": "assets/img/phone_card_3.png",
+      "title": "Apple EarPods",
+      "price": 2327,
+      "rate": 4.5
+    },
+    {
+      "id": "4",
+      "img": "assets/img/phone_card_1.png",
+      "title": "MEG Trident X 10th",
+      "price": 2927,
+      "rate": 4.7
+    },
+    {
+      "id": "5",
+      "img": "assets/img/phone_card_2.png",
+      "title": "Apple EarPods",
+      "price": 2327,
+      "rate": 4.5
+    },
+    {
+      "id": "6",
+      "img": "assets/img/phone_card_3.png",
+      "title": "Apple EarPods",
+      "price": 2327,
+      "rate": 4.5
+    }
+  ],
+  "wirelessHeadphones": [
+    {
+      "id": "7",
+      "img": "assets/img/wireless_phone_card_2.png",
+      "title": "Apple EarPods",
+      "price": 9527,
+      "rate": 4.7
+    },
+    {
+      "id": "8",
+      "img": "assets/img/wireless_phone_card_1.png",
+      "title": "GERLAX GH-04",
+      "price": 6527,
+      "rate": 4.7
+    },
+    {
+      "id": "9",
+      "img": "assets/img/wireless_phone_card_3.png",
+      "title": "BOROFONE BO4",
+      "price": 7527,
+      "rate": 4.7
+    }
+  ],
+  "basket": [
+    {
+      "id": "1",
+      "img": "assets/img/phone_card_1.png",
+      "title": "MEG Trident X 10th",
+      "price": 2927,
+      "discount": 3570,
+      "rate": 4.7,
+      "quantity": 7,
+      "totalCardPrice": 20489
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+.main {
+  display: flex;
+  justify-content: space-between;
+  height: 149px;
+  background: #ffffff;
+  border-radius: 30px 30px 0 0;
+  padding: 30px 29px 0;
+  .logo {
+    cursor: pointer;
+    font-family: "Montserrat";
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 30.48px;
+    color: #101010;
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+
+    .footer-menu {
+      cursor: pointer;
+      font-size: 17px;
+      font-weight: 400;
+      line-height: 20.72px;
+      color: #000000;
+    }
+
+    .lang-wrapper {
+      margin-top: 35px;
+      display: flex;
+      align-items: center;
+      gap: 17px;
+
+      .lang {
+        cursor: pointer;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 18.29px;
+        color: #101010;
+      }
+
+      .lang.active {
+        color: #ffa542;
+      }
+    }
+  }
+
+  .social {
+    display: flex;
+    align-items: start;
+    gap: 17.9px;
+  }
+}

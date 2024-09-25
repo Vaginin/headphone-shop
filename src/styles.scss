@@ -1,1 +1,116 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import "../src/styles/fonts.scss";
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: #eaeaea;
+  margin: 0 auto;
+  font-family: "Montserrat", sans-serif !important;
+  width: 1110px !important;
+}
+
+.footer {
+  bottom: 0;
+  width: 1110px;
+}
+
+p {
+  margin: 0 !important;
+}
+
+.card {
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  width: 350px;
+  background-color: #ffffff;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+
+  .card-img {
+    min-height: 237px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card-description {
+    margin-top: 54px;
+    display: flex;
+    flex-direction: column;
+
+    .wrapper {
+      display: flex;
+      justify-content: space-around;
+
+      .title {
+        font-size: 17px;
+        font-weight: 600;
+        line-height: 20.72px;
+        color: #1c1c27;
+      }
+
+      .price-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .discount {
+          font-size: 17px;
+          font-weight: 600;
+          line-height: 20.72px;
+          color: #ffa542;
+        }
+
+        .price {
+          font-size: 13px;
+          font-weight: 600;
+          line-height: 15.85px;
+          color: #ffce7f;
+          text-decoration: line-through;
+
+          &.hide {
+            height: 15px;
+          }
+        }
+      }
+
+      .rate-wrapper {
+        display: flex;
+        align-items: flex-end;
+        gap: 10px;
+
+        .rate {
+          font-size: 17px;
+          font-weight: 600;
+          line-height: 20.72px;
+          color: #838383;
+        }
+      }
+
+      .card-button {
+        cursor: pointer;
+        border: none;
+        background: inherit;
+        font-size: 17px;
+        font-weight: 600;
+        line-height: 20.72px;
+        color: #000000;
+      }
+    }
+
+    .bottom {
+      display: flex;
+      justify-content: space-between;
+      padding: 15px 26px 26px 26px;
+    }
+  }
+}
+
+.card:hover {
+  transform: scale(1.04);
+}

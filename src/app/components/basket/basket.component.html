@@ -1,0 +1,43 @@
+<div class="main" *ngIf="basket.length">
+  <div class="card-side">
+    <div class="card" *ngFor="let item of basket">
+      <div class="left-side">
+        <div class="card-counter">
+          <div class="card-img">
+            <img src="{{ item.img }}" alt="card image" />
+          </div>
+          <div class="counter">
+            <button class="count-button" (click)="minusItem(item)">
+              <img src="assets/icons/minus.svg" alt="minus" />
+            </button>
+            <p class="count-number">{{ item.quantity }}</p>
+            <button class="count-button" (click)="plusItem(item)">
+              <img src="assets/icons/plus.svg" alt="plus" />
+            </button>
+          </div>
+        </div>
+        <div class="wrapper">
+          <span class="title">{{ item.title }}</span>
+          <p class="price">{{ item.price }} ₽</p>
+        </div>
+      </div>
+      <div class="total-item-price">
+        <button class="delete" (click)="deleteProduct(item)">
+          <img src="assets/icons/delete.svg" alt="delete button" />
+        </button>
+        <p class="price">{{ item.totalCardPrice }} ₽</p>
+      </div>
+    </div>
+  </div>
+  <div class="total-wrapper">
+    <div class="top">
+      <p class="total">ИТОГО</p>
+      <div class="price">₽ {{ totalPrice }}</div>
+    </div>
+    <button class="next">Перейти к оформлению</button>
+  </div>
+</div>
+
+<div class="empty-block" *ngIf="!basket.length">
+  <p class="empty-text">Ваша корзина пуста</p>
+</div>

@@ -1,0 +1,25 @@
+.main {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+  margin-bottom: 28px;
+
+  .logo {
+    cursor: pointer;
+    font-family: "Montserrat";
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 30.48px;
+    color: #101010;
+  }
+
+  .tab-bar {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+
+    .button {
+      cursor: pointer;
+    }
+  }
+}

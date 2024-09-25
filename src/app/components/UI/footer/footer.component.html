@@ -1,0 +1,45 @@
+<div class="footer">
+  <div class="main">
+    <div class="logo">QPICK</div>
+    <div class="column">
+      <span class="footer-menu">Избранное</span>
+      <span [routerLink]="['basket']" class="footer-menu">Корзина</span>
+      <span class="footer-menu">Контакты</span>
+    </div>
+    <div class="column">
+      <span>Условия сервиса</span>
+      <div class="lang-wrapper">
+        <img src="assets/icons/lang.svg" alt="" />
+        <span
+          [ngClass]="{ active: activeLang === 'kaz' }"
+          (click)="activeLang = 'kaz'"
+          class="lang"
+          >Каз</span
+        >
+        <span
+          [ngClass]="{ active: activeLang === 'rus' }"
+          (click)="activeLang = 'rus'"
+          class="lang"
+          >Рус</span
+        >
+        <span
+          [ngClass]="{ active: activeLang === 'eng' }"
+          (click)="activeLang = 'eng'"
+          class="lang"
+          >Eng</span
+        >
+      </div>
+    </div>
+    <div class="social">
+      <a href="https://vk.com/alexander_akinin" target="blank"
+        ><img style="margin-top: 6px" src="assets/icons/vk.svg" alt=""
+      /></a>
+      <a href="https://t.me/aki_inyourface" target="blank"
+        ><img src="assets/icons/tg.svg" alt=""
+      /></a>
+      <a href="https://wa.me/79637769455" target="blank">
+        <img src="assets/icons/whatsapp.svg" alt=""
+      /></a>
+    </div>
+  </div>
+</div>
